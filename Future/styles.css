@@ -112,7 +112,15 @@ button {
 }
 
 #collection-button::after {
-
+	position: absolute;
+	content: "";
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 10px;
+	height: 10px;
+	right: 25px;
+	top: 25px;
+	transform: rotate(45deg);
 }
 
 .mask {
@@ -172,6 +180,36 @@ button {
 	position: absolute;
 	right: 52px;
 	top: 17px;
+}
+
+.intro-square {
+	border: 4px solid white;
+	transform: rotate(57deg);
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 740px;
+	right: 100px;
+	z-index: 3;
+	border-radius: 3px;
+}
+
+.intro-circle {
+	position: absolute;
+	border-radius: 50%;
+	border: 8px solid #e3d1fd;
+	height: 20px;
+	width: 20px;
+	z-index: 3;
+	top: 185px;
+	right: 730px;
+}
+
+img.circle-grid {
+	position: absolute;
+	z-index: 4;
+	left: 0;
+	top: 0;
 }
 
 .bags-block {
@@ -348,9 +386,10 @@ button {
 }
 
 .watch-block {
-	margin: 80px 123px 0 123px;
+	margin: 300px 123px 0 123px;
 	box-shadow: 10px 10px 30px 3px #f1f2f2;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 .watch-block h1 {

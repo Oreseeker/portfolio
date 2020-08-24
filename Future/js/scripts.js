@@ -15,7 +15,7 @@ const goodItem = Vue.component("good-item", {
 					<div class="price">
 						$ {{good.price.toFixed(2)}} <!--Всегда оставлять 2 знака после запятой-->
 				    </div>
-				    <div class="buy-button" v-if="hovered">Add to Cart</div>
+				    <a class="buy-button" v-show="hovered" href="#">Add to Cart</a>
 				</div>`,
 	data() {
 		return {
