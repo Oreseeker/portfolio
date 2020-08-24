@@ -24,6 +24,14 @@ h2 {
 	margin: 0;
 }
 
+button {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+}
+
 
 .intro-block {
 	width: 100%;
@@ -340,7 +348,7 @@ h2 {
 }
 
 .watch-block {
-	margin-top: 80px;
+	margin: 80px 123px 0 123px;
 	box-shadow: 10px 10px 30px 3px #f1f2f2;
 	box-sizing: border-box;
 }
@@ -365,6 +373,7 @@ h2 {
 	box-sizing: border-box;
 	padding: 30px 90px;
 	box-shadow: 10px 10px 30px 3px #f1f2f2;
+	color: #333333;
 }
 
 .watch-block nav a {
@@ -382,5 +391,90 @@ h2 {
 }
 
 .watch-grid {
+	background-color: white;
+	z-index: 2;
+	position: relative;
 	margin-top: 50px;
+}
+
+.newsletter-block {
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #8c84f9;
+	height: 490px;
+	margin-top: -70px;
+	z-index: 1;
+}
+
+.newsletter-block h1 {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.125rem;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	color: white;
+	text-align: center;
+	z-index: 1;
+}
+
+.newsletter-block input[type="text"] {
+	display: block;
+	width: 850px;
+	height: 75px;
+	margin: 0 auto;
+	border-radius: 100px;
+	border: 0;
+	padding: 0 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400px;
+	font-size: 1.25rem;
+	outline: none;
+}
+
+.submit-letter {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.25rem;
+	color: white;
+	position: absolute;
+	left: 1052px;
+	top: 252px;
+	background-color: #8c84f9;
+	padding: 20px 65px;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+footer {
+	height: 400px;
+	width: 100%;
+}
+
+footer h1 {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-weight: medium;
+	font-size: 2.5rem;
+	padding-top: 75px;
+	text-align: center;
+}
+
+footer nav {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	justify-content: space-around;
+	margin-top: 45px;
+	width: 520px;
+}
+
+footer nav a {
+	color: #595959;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1.125rem;
+	display: block;
 }
