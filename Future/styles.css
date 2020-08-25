@@ -221,6 +221,7 @@ img.circle-grid {
 	z-index: 100;
 	box-sizing: border-box;
 	box-shadow: 10px 10px 30px 3px #f1f2f2;
+	background-color: white;
 }
 
 .bags-block h1 {
@@ -322,6 +323,17 @@ img.circle-grid {
 	left: 85px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
+}
+
+.half-circle {
+	position: absolute;
+	left: 70px;
+	top: 1440px;
+	border: 5px solid #b5a2f7;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	z-index: 1;
 }
 
 .brand-block {
