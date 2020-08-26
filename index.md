@@ -1,1 +1,98 @@
-123213213
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Big Shop</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script src="https://use.fontawesome.com/bbbc45cbde.js"></script>
+</head>
+<body>
+	<div class="intro-block">
+		<div class="intro-upper-text">
+			<div class="logo">
+				Big Shop
+			</div>
+			<nav>
+				<a href="#" id="search-button">Search</a>
+				<a href="#" id="collection-button">Collection</a>
+			</nav>
+			<div class="intro-square">
+			</div>
+			<div class="intro-circle">
+			</div>
+			<img src="images/circle-grid.png" alt="" class="circle-grid">
+		</div>
+		<div class="intro-main-text">
+			<h1>Summer <span class="h-white">Collection</span></h1>
+			<h2><span class="h-yellow">25%</span> <span class="h-white">OFF</span></h2>
+		</div>
+		<a href="#" id="details-button">Details</a>
+	</div>
+	<div class="mask">
+	</div>
+	<div class="bags-block">
+		<h1>Trendy Arrivals</h1>
+		<div id="bags">
+			<good-item v-for="bag in bags" :good="bag"></good-item>
+		</div>
+	</div>
+	<div class="half-circle">
+	</div>
+	<div class="brand-block">
+		<div class="brand-text">
+			<h1>Our Brands</h1>
+			<h2>Small shoes 2017 new arrivals mini Messenger <span class="h-purple">Classic Shoes</span></h2>
+			<div class="brand-comments">
+				In porttitor elit ac mi placerat hendrerit. Morbi accumsan, erat in ullamcorper consectetur, nisi erat efficitur eros, sagittis tristique odio turpis vitae dui. Vestibulum gravida est ut erat pretium, non pretium diam feugiat. Integer egestas suscipit lorem ac fermentum. Integer at mauris vitae justo sagittis dapibus. Pellentesque sit amet nisl vitae orci vehicula faucibus. Fusce et lat, feugiat est
+			</div>
+		</div>
+		<div class="circle-img">
+			<img src="images/circle.png" alt="">
+			<div class="white-circle"></div>
+		</div>
+	</div>
+	
+
+	<div class="watch-block">
+		<h1>Our Showcase</h1>
+		<div id="watch">
+			<nav><a v-for="(item, idx) in navigationItems" href="#" :class="states[idx]">{{ item }}</a></nav>
+			<div class="watch-grid">
+				<good-item v-for="wt in watch" :good="wt"></good-item>
+			</div>
+		</div>
+	</div>
+	<div class="newsletter-block">
+		<h1>Newsletter</h1>
+		<input type="text" placeholder="Enter your e-mail address">
+		<button class="submit-letter">Submit</button>
+	</div>
+	<footer>
+		<h1>Big Shop</h1>
+		<nav> 
+			<a href="#">Man</a>
+			<a href="#">Woman</a>
+			<a href="#">Kids</a>
+			<a href="#">Bags</a>
+			<a href="#">Watches</a>
+			<a href="#">Toys</a> 
+	    </nav>
+	    <div class="our-links">
+	    	<a href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+	    	<a href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	    	<a href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	    </div>
+	    <div class="copyright">
+	    	&copy; Copyright 2017. Big Shop by Victor Themes.
+	    </div>
+	</footer>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+<script src="js/vue.js"></script>
+<script src="js/scripts.js"></script>
+</html>
+
